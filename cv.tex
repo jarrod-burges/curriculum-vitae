@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+% \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -126,88 +126,255 @@
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
 %----------------------------------------------------------------------------------------
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+\usepackage[scale=0.75]{geometry}
+\usepackage{enumerate}
+
+\name{Jarrod}{Burges, GIT}
+\address{Fullerton, California, 92835}{}
+\phone[mobile]{+1 714-423-6030}
+\email{jarrodburges@outlook.com}
+\homepage{jarrod-burges.github.io}
+
 \begin{document}
+\makecvtitle
 
-% non-numbered pages
-\pagestyle{empty} 
-
-%----------------------------------------------------------------------------------------
-%	TITLE
-%----------------------------------------------------------------------------------------
-
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
-\begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+\cventry{Expected December 2024}{B.Sc. in Geology and Computer Science}{California State University, Fullerton}{}{}{
+\emph{Thesis Title: “DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE”}\\
+Thesis Advisor: Dr. Kathryn Metcalf}
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+\section{Research Interests}
+\cvitem{}{\small{Utilizing machine learning to solve geological questions using big data. Specific interests in developing models to understand geochemical or optical petrographic micro-signatures to extract new insights previously difficult to be seen.}}
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+\section{Certifications}
+\cvitem{}{California Geologist-in-Training (obtained October 2024)}
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
 \section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\begin{enumerate}[{[}2{]}]
+\item Burges, J. and Metcalf, K., 2024, GeoCORK: Part 2. Technical Development, Maintenance, and Expansion (in preparation, submission January 2025)
+\item Metcalf, K. and Burges, J., 2024, Part 1. (in preparation, submission January 2025)
+\end{enumerate}
 
-%----------------------------------------------------------------------------------------
-%	SKILLS
-%----------------------------------------------------------------------------------------
-\section{Skills}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
-\end{tabularx}
+\section{Technical Skills}
+\cvitem{Programming Languages}{Python, R, Java, and C++}
+\cvitem{Development Suite}{JetBrains, RStudio, and GitHub/Git}
+\cvitem{GIS Software}{ArcGIS and ArcMap}
+\cvitem{Office Suite}{Microsoft Office Suite}
+\cvitem{Adobe Suite}{Illustrator, Sign, Photoshop, Premiere Pro}
+\cvitem{Operating Systems}{Linux (Ubuntu and Raspbian), Windows OS, Mac OS}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+\section{Research Experience}
+\cventry{October 2022 -- Present}{Undergraduate Honors Thesis}{}{}{}{
+\textbf{Title: DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE}
+\begin{itemize}
+\item Full-stack development in Python, SQLite3, and PyQt6
+\item Complex custom database schema to contain all relevant geological contexts used in geochronology
+\begin{itemize}
+\item 45 SQL tables, 19 of which are user-viewable, utilizing many-to-one and many-to-many relationships
+\end{itemize}
+\item Automatic importing and filtering by any data metric within the database
+\item Custom tags allow for user-defined customization
+\item GitHub open-source version control for user feedback and contributions
+\end{itemize}}
+
+\cventry{July 2023}{Field Assistant}{Tibet, China}{}{}{
+\begin{itemize}
+\item Four weeks through rural Tibet, China, collecting data to assist in creating four balanced cross-sections
+\item Assisted with field collection of samples, data, and geological interpretations
+\end{itemize}}
+
+\cventry{February 2023}{ArcMap/GIS Update for University Police 911 Dispatch Center}{California State University, Fullerton}{}{}{
+\begin{itemize}
+\item Assisted in updating the Computer Aided Dispatching Software (CAD) utilized by the on-campus 911 emergency call center
+\item Observed outdated maps, roads, and labels for various buildings, streets, and university property
+\item Utilized ArcGIS and ArcMap to update all outdated georeferenced objects and satellite imagery
+\item Improved accuracy of calls for service by being correctly labeled for dispatchers to assist with officers responding to calls
+\end{itemize}}
+
+\section{Teaching \& Advising}
+\cventry{Fall 2023}{Undergraduate Teaching Assistant}{Geology 303A | Earth Materials}{}{}{
+\begin{itemize}
+\item Assisted the professor and graduate TA with lecture/lab learning sessions for twenty-five students
+\item Acted as in-class mentor to sophomore and junior-standing geology students
+\item Conducted a one-hour seminar-like lecture on Artificial Intelligence (AI) for the geological field
+\begin{itemize}
+\item Topics focused on entry-level concepts, including the methodology behind AI algorithms, their geological uses, and current projects being developed by researchers
+\end{itemize}
+\end{itemize}}
+
+\section{Professional Experience}
+\cventry{May 2024 -- Present}{Staff Geologist and Database Analyst}{EEC Environmental}{Orange, California}{}{
+\begin{itemize}
+\item Prepared comprehensive geological reports and presentations for clients and internal stakeholders
+\item Conducted detailed sampling and data collection to support environmental projects
+\item Managed geological databases in Microsoft Access and SQL Server, ensuring accurate and efficient data storage, retrieval, and integrity
+\item Created and maintained comprehensive metadata documentation for all database systems
+\item Monitored and evaluated drilling operations, providing real-time geological interpretations for later data analysis
+\item Ensured compliance with environmental regulations across multiple states and company standards during fieldwork and data analysis
+\end{itemize}}
+
+\cventry{June 2022 -- Present}{Community Service Officer (CSO)}{University Police, California State University, Fullerton}{}{}{
+\textbf{CSO Supervisor (June 2023 -- Present)}
+\begin{itemize}
+\item Overseeing supervisor of thirty-five student CSOs
+\item Creating and ensuring adherence to all policies and procedures from within our division or our superiors in the sworn command staff
+\item Implementing new strategies to improve the program
+\item Creating schedules, managing payrolls, and enacting disciplinary actions
+\end{itemize}
+\textbf{CSO Field Training Officer (August 2022 -- June 2023)}
+\begin{itemize}
+\item Responsible for providing on-the-job training and mentorship to new student CSOs
+\item Guide and evaluate trainees’ performance, teach them proper procedures and protocols, and ensure their readiness for independent duty through hands-on training and assessment
+\item Assigned special duties, which included outreach, event planning, and facilitating staffing levels
+\end{itemize}
+\textbf{Community Service Officer (June 2022 -- August 2022)}
+\begin{itemize}
+\item Student-only non-sworn position within the CSUF Police Department that focuses on community engagement, public safety, and support services
+\item Provided a safe environment to the campus community by:
+\begin{itemize}
+\item Patrolling assigned areas, locking up campus after all classes conclude, responding to non-emergency calls, and engaging with the community to address concerns
+\end{itemize}
+\item Acted as a visible presence to assist with crime prevention initiatives and as a liaison between the student community and law enforcement
+\end{itemize}}
+
+\cventry{December 2022 -- January 2023}{Lab Assistant (Winter Temp)}{GMU Geotechnical}{Rancho Santa Margarita, California}{}{
+\begin{itemize}
+\item Conducted comprehensive soil analyses to state and federally regulated procedures
+\item Analyses included Atterberg limits, maximum density curves, moisture contents, R-values, grain size sieve analysis, and soil classifications
+\item Maintained accurate records with in-place filing systems
+\end{itemize}}
+
+\section{Professional Service}
+\cventry{October 2023 -- Present}{Student Representative}{Geological Society of America (GSA) Division of Geoinformatics and Data Science (GIDS)}{}{}{
+\begin{itemize}
+\item Provide student-related insight into the administration and operation of the Geoinformatics and Data Science division of GSA
+\item Assisted in the facilitation of technical sessions at conferences
+\item Managed the GIDS website
+\end{itemize}}
+
+\section{Relevant Coursework}
+\cvitem{Geology 481A}{(Geology Field Camp I) -- Grade: A-
+\begin{itemize}
+\item One week studying and mapping 2 mi\textsuperscript{2} Poleta Folds, Deep Springs Valleys, CA – Produced final report with map and two cross-sections
+\item One week studying and mapping 10 mi\textsuperscript{2} Devil’s Punchbowl, Mono-Inyo Craters, CA – Produced final report with map and two cross-sections
+\item Three days studying and mapping Rock Creek Lake, John Muir Wilderness, CA – Produced final report with map and one cross-section (Completed with others' notes due to injury sustained first day)
+\item One week shadowing and studying industry hydrogeology through Orange County and Riverside County Watershed
+\end{itemize}}
+
+\cvitem{Geology 510T}{(Graduate Topics in Geology - Ore Deposit Models) -- Grade: A
+\begin{itemize}
+\item Created a gradient boosting machine learning mineral prospectivity map for Mississippi-valley type deposits (Pb \& Zn)
+\item Acquired knowledge of various deposit models and associated geologic structures
+\end{itemize}}
+
+\cvitem{Computer Science 483}{(Machine Learning) -- Grade: B+
+\begin{itemize}
+\item Focused on the mathematics behind machine learning algorithms
+\item Topics included posterior priors, distributions, and hyperparameter tuning
+\end{itemize}}
+
+\cvitem{Computer Science 481}{(Artificial Intelligence) -- Grade: B-
+\begin{itemize}
+\item Focused on the theory and concepts behind machine learning algorithms, artificial intelligence, and their distinct definitions
+\item Topics included pruning methods, searching algorithms, ethics, game theory, and discrete math
+\end{itemize}}
+
+\cvitem{Geology 456}{(Geophysics) -- Grade: B-
+\begin{itemize}
+\item Focused on the methods of geophysical surveys
+\item Topics included seismograms, electrical resistivity, gravity, and multi-method report analysis
+\end{itemize}}
+
+\cvitem{Computer Science 375}{(Introduction to Data Science) -- Grade: B-
+\begin{itemize}
+\item Focused on the applications and usage of the statistical coding language, R
+\item Topics included visualization of data, introductory machine learning techniques, and standard statistical packages, \texttt{dplyr} and \texttt{tidyselect}
+\end{itemize}}
+
+\cvitem{General Classes Taken}{}
+\cvitem{Geology}{
+\begin{itemize}
+\item Earth Materials
+\item Igneous and Metamorphic Petrology
+\item Sedimentology and Stratigraphy
+\item Geologic Field Techniques
+\item Structural Geology
+\item Volcanology
+\item Hydro and Surface Processes
+\item Earth History
+\end{itemize}}
+
+\cvitem{Other Science}{
+\begin{itemize}
+\item General Chemistry 1 \& 2
+\item Calculus Physics 1 \& 2
+\item Mathematical Structures 1 \& 2
+\end{itemize}}
+
+\cvitem{Computer Science}{
+\begin{itemize}
+\item File Structures and Databases
+\item Computer Communications
+\item Computer System Architecture
+\item Compilers and Languages
+\item Software Engineering
+\item Modern Software Deployment
+\item Python
+\item Operating Systems
+\item Professional Ethics in Computing
+\item Data Structures
+\item Algorithm Engineering
+\item Computer Organization and Assembly Language
+\end{itemize}}
+
+\section{Selected Awards}
+\begin{itemize}
+\item Armstrong-Butcher Undergraduate Geology Conference Travel Award (\$500), California State University, Fullerton (September 2024)
+\item Cordilleran Section Student Travel Award (\$375), Geological Society of America (September 2024)
+\item Armstrong-Butcher Undergraduate Geology Conference Travel Award (\$500), California State University, Fullerton (May 2024)
+\item Undergraduate Research Opportunity Center (UROC) Travel Award (\$750), California State University, Fullerton (May 2024)
+\item Cordilleran Section Student Travel Award (\$600), Geological Society of America (May 2024)
+\end{itemize}
+
+\section{Meeting Abstracts}
+\begin{enumerate}[9.]
+\item Burges, J. and Metcalf, K., 2024, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Abstract 59-4 presented at 2024 Geological Society of America Annual Meeting, Anaheim, California, 22-25 September.
+\item Burges, J. and Metcalf, K., 2024, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Abstract 38-2 presented at 2024 Geological Society of America Joint Cordilleran and Rocky Mountain Section Meeting, Spokane, Washington, 15-17 May.
+\item Burges, J. and Metcalf, K., 2024, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Presented at Southern California Geological Society May 2024 Meeting, Fullerton, California, 6 May.
+\item Burges, J. and Metcalf, K., 2024, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Presented at 2024 Department of Geological Sciences Research Day, Fullerton, California, 3 May.
+\item Burges, J., and Metcalf, K., 2024, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Abstract 411 presented at 2024 National Conference of Undergraduate Research, Long Beach, California, 8-10 April.
+\item Burges, J., and Metcalf, K., 2023, DESKTOP APPLICATION TO MANAGE AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Abstract 46-6 presented at 2023 Geological Society of America Annual Meeting, Pittsburgh, Philadelphia, 15-18 October.
+\item Burges, J., Metcalf, K., and Goffman, M., 2023, PYTHON PROGRAM TO INPUT, SORT, VIEW, AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Abstract 9-11 presented at 2023 Geological Society of America Cordilleran Section Meeting, Reno, Nevada, 16-19 May.
+\item Burges, J., Metcalf, K., and Goffman, M., 2023, PYTHON PROGRAM TO INPUT, SORT, VIEW, AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Presented at 2023 College of Engineering and Computer Science Student Innovation Expo, Fullerton, California, 5 May.
+\item Burges, J., Metcalf, K., and Goffman, M., PYTHON PROGRAM TO INPUT, SORT, VIEW, AND STORE DETRITAL ZIRCON GEOCHRONOLOGICAL DATA IN A SQL DATABASE: Presented at 2023 Department of Geological Sciences Research Day, Fullerton, California, 5 May.
+\end{enumerate}
+
+\section{References}
+\cvitem{Academic}{
+\begin{itemize}
+\item \textbf{Kathryn Metcalf}, Assistant Professor of Geology\\
+California State University, Fullerton\\
+\email{kametcalf@fullerton.edu} \phone{+1 657-278-3942}
+\item \textbf{Patrick Phelps}, Assistant Professor of Geology\\
+California State University, Fullerton\\
+\email{pphelps@fullerton.edu} \phone{+1 657-278-7616}
+\item \textbf{Valbone Memeti}, Associate Professor of Geology\\
+California State University, Fullerton\\
+\email{vmemeti@fullerton.edu} \phone{+1 657-278-2036}
+\end{itemize}}
+
+\cvitem{Professional}{
+\begin{itemize}
+\item \textbf{Anthony Renteria}, Corporal, University Police\\
+California State University, Fullerton\\
+\email{arenteria@fullerton.edu} \phone{+1 657-278-4947}
+\end{itemize}}
+
+\end{document}
 
 \end{document}
